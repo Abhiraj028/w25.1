@@ -20,8 +20,9 @@ jobs:
           key: ${{ secrets.PRIVATE_SSH_KEY }}
           port: 22
           script: |
+            ls
+            git remote add origin https://github.com/Abhiraj028/w25.1.git
             cd w25.1
-            git pull origin main
             npm i
             npm run build
             npm run start
